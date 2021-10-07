@@ -1,0 +1,4 @@
+.ant-card.ant-card-bordered.ant-card-contain-grid .ant-card-body {
+    display: flex;
+    overflow-x: scroll;
+}
