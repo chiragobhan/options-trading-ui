@@ -1,3 +1,13 @@
+::-webkit-scrollbar {
+    height: 0;
+}
+
+.categoryList {
+    width: auto;
+    margin: 14px 16px 0;
+    border-radius: 20px;
+}
+
 .ant-card.ant-card-bordered.ant-card-contain-grid .ant-card-body {
     display: flex;
     overflow-x: scroll;

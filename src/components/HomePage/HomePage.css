@@ -37,6 +37,12 @@ body {
     margin-left: 10px;
     
 }
+
+.tradeList {
+    width: auto !important;
+    margin: 24px 16px;
+    border-radius: 20px;
+}
   
 .site-layout .site-layout-background {
     background: #fbfeff;

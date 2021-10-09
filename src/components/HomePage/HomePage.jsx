@@ -2,20 +2,39 @@ import React from 'react';
 import 'antd/dist/antd.css';
 import './HomePage.css'
 import Categories from './../Categories/Categories'
-import { Layout, Menu } from 'antd';
+import NewTrades from '../NewTrades/NewTrades'
+import TradesPlayed from '../TradesPlayed/TradesPlayed'
+import { Layout, Menu, Card } from 'antd';
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
   UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
+  FireOutlined,
+  RiseOutlined,
 } from '@ant-design/icons';
 
-const { Header, Sider, Content } = Layout;
+const { Header, Sider } = Layout;
+
+const tabList = [
+  {
+    key: 'newTrades',
+    tab: 'New Trades',
+  },
+  {
+    key: 'tradesPlayed',
+    tab: 'Trades Played',
+  },
+];
+
+const contentList = {
+  newTrades: <NewTrades />,
+  tradesPlayed: <TradesPlayed />,
+};
 
 class HomePage extends React.Component {
   state = {
     collapsed: true,
+    key: 'newTrades',
   };
 
   toggle = () => {
@@ -24,26 +43,32 @@ class HomePage extends React.Component {
     });
   };
 
+  onTabChange = (key, type) => {
+    this.setState({ [type]: key });
+  };
+
   render() {
     return (
       <Layout>
+
         <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
           <div className="logo-wrapper">
             <img src="./img/probo-logo.svg" alt="Probo Logo" />
             {this.state.collapsed ? '' : <span className="logo">Probo</span> }
           </div>
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item key="1" icon={<UserOutlined />}>
-              nav 1
+            <Menu.Item key="1" icon={<RiseOutlined />}>
+              Trades
             </Menu.Item>
-            <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-              nav 2
+            <Menu.Item key="2" icon={<FireOutlined />}>
+              Challenge
             </Menu.Item>
-            <Menu.Item key="3" icon={<UploadOutlined />}>
-              nav 3
+            <Menu.Item key="3" icon={<UserOutlined />}>
+              My Profile
             </Menu.Item>
           </Menu>
         </Sider>
+
         <Layout className="site-layout">
           <Header className="site-layout-background" style={{ padding: 0 }}>
             {React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
@@ -52,18 +77,24 @@ class HomePage extends React.Component {
             })}
             <span className="sub-title">Predict the future with Probo</span>
           </Header>
+
           <Categories />
-          <Content
-            className="site-layout-background"
-            style={{
-              margin: '24px 16px',
-              padding: 24,
-              minHeight: 280,
+
+          <Card
+            className="tradeList"
+            style={{ width: '100%' }}
+            extra={<a href="#">How to Trade?</a>}
+            tabList={tabList}
+            activeTabKey={this.state.key}
+            onTabChange={key => {
+              this.onTabChange(key, 'key');
             }}
           >
-            Content
-          </Content>
+            {contentList[this.state.key]}
+          </Card>
+
         </Layout>
+
       </Layout>
     );
   }
