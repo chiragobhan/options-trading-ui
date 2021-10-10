@@ -60,34 +60,12 @@ const changePrice = (value) => {
                     />
                     <div className="tradeActions">
                         <div className="tradeAction">
-                            <div className="tradeFill tradePrimaryFill">₹ 4</div>
-                            <Button onClick={showDrawer} className="primary-btn" default shape="round" size="large">Yes</Button>
+                            <div style={{width: (tradeYesValue * 10) + "%"}} className="tradeFill tradePrimaryFill">₹ {tradeYesValue}</div>
+                            <Button onClick={() => showDrawer(1)} className="primary-btn" default shape="round" size="large">Yes</Button>
                         </div>
                         <div className="tradeAction">
-                            <div className="tradeFill tradeDangerFill">₹ 6</div>
-                            <Button onClick={showDrawer} danger shape="round" size="large">No</Button>
-                        </div>
-                    </div>
-                </Card>
-            </Col>
-
-            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
-                <Card
-                    style={{ borderRadius: '20px' }}
-                    hoverable="true"
-                >
-                    <Meta
-                    avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                    title="This is a test title to see how a long question will look? Do you think it looks good?"
-                    />
-                    <div className="tradeActions">
-                        <div className="tradeAction">
-                            <div className="tradeFill tradePrimaryFill">₹ 4</div>
-                            <Button onClick={showDrawer} className="primary-btn" default shape="round" size="large">Yes</Button>
-                        </div>
-                        <div className="tradeAction">
-                            <div className="tradeFill tradeDangerFill">₹ 6</div>
-                            <Button onClick={showDrawer} danger shape="round" size="large">No</Button>
+                            <div style={{width: (tradeNoValue * 10) + "%"}} className="tradeFill tradeDangerFill">₹ {tradeNoValue}</div>
+                            <Button onClick={() => showDrawer(0)} danger shape="round" size="large">No</Button>
                         </div>
                     </div>
                 </Card>
@@ -104,12 +82,12 @@ const changePrice = (value) => {
                     />
                     <div className="tradeActions">
                         <div className="tradeAction">
-                            <div className="tradeFill tradePrimaryFill">₹ 4</div>
-                            <Button onClick={showDrawer} className="primary-btn" default shape="round" size="large">Yes</Button>
+                            <div style={{width: (tradeYesValue * 10) + "%"}} className="tradeFill tradePrimaryFill">₹ {tradeYesValue}</div>
+                            <Button onClick={() => showDrawer(1)} className="primary-btn" default shape="round" size="large">Yes</Button>
                         </div>
                         <div className="tradeAction">
-                            <div className="tradeFill tradeDangerFill">₹ 6</div>
-                            <Button onClick={showDrawer} danger shape="round" size="large">No</Button>
+                            <div style={{width: (tradeNoValue * 10) + "%"}} className="tradeFill tradeDangerFill">₹ {tradeNoValue}</div>
+                            <Button onClick={() => showDrawer(0)} danger shape="round" size="large">No</Button>
                         </div>
                     </div>
                 </Card>
@@ -126,12 +104,34 @@ const changePrice = (value) => {
                     />
                     <div className="tradeActions">
                         <div className="tradeAction">
-                            <div className="tradeFill tradePrimaryFill">₹ 4</div>
-                            <Button onClick={showDrawer} className="primary-btn" default shape="round" size="large">Yes</Button>
+                            <div style={{width: (tradeYesValue * 10) + "%"}} className="tradeFill tradePrimaryFill">₹ {tradeYesValue}</div>
+                            <Button onClick={() => showDrawer(1)} className="primary-btn" default shape="round" size="large">Yes</Button>
                         </div>
                         <div className="tradeAction">
-                            <div className="tradeFill tradeDangerFill">₹ 6</div>
-                            <Button onClick={showDrawer} danger shape="round" size="large">No</Button>
+                            <div style={{width: (tradeNoValue * 10) + "%"}} className="tradeFill tradeDangerFill">₹ {tradeNoValue}</div>
+                            <Button onClick={() => showDrawer(0)} danger shape="round" size="large">No</Button>
+                        </div>
+                    </div>
+                </Card>
+            </Col>
+
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
+                <Card
+                    style={{ borderRadius: '20px' }}
+                    hoverable="true"
+                >
+                    <Meta
+                    avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                    title="This is a test title to see how a long question will look? Do you think it looks good?"
+                    />
+                    <div className="tradeActions">
+                        <div className="tradeAction">
+                            <div style={{width: (tradeYesValue * 10) + "%"}} className="tradeFill tradePrimaryFill">₹ {tradeYesValue}</div>
+                            <Button onClick={() => showDrawer(1)} className="primary-btn" default shape="round" size="large">Yes</Button>
+                        </div>
+                        <div className="tradeAction">
+                            <div style={{width: (tradeNoValue * 10) + "%"}} className="tradeFill tradeDangerFill">₹ {tradeNoValue}</div>
+                            <Button onClick={() => showDrawer(0)} danger shape="round" size="large">No</Button>
                         </div>
                     </div>
                 </Card>
