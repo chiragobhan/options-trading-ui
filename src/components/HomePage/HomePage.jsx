@@ -12,6 +12,7 @@ import {
   UserOutlined,
   FireOutlined,
   RiseOutlined,
+  WalletOutlined,
 } from '@ant-design/icons';
 
 const { Header, Sider } = Layout;
@@ -62,14 +63,17 @@ class HomePage extends React.Component {
             <img src="./img/probo-logo.svg" alt="Probo Logo" />
             {this.state.collapsed ? '' : <span className="logo">Probo</span> }
           </div>
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item key="1" icon={<RiseOutlined />}>
+          <Menu theme="dark" mode="inline" defaultSelectedKeys={['2']}>
+          <Menu.Item style={{fontSize: '18px'}} disabled key="1" icon={<WalletOutlined style={{fontSize: '18px'}} />}>
+              00.00
+            </Menu.Item>
+            <Menu.Item key="2" icon={<RiseOutlined />}>
               Trades
             </Menu.Item>
-            <Menu.Item key="2" icon={<FireOutlined />}>
+            <Menu.Item key="3" icon={<FireOutlined />}>
               Challenge
             </Menu.Item>
-            <Menu.Item key="3" icon={<UserOutlined />}>
+            <Menu.Item key="4" icon={<UserOutlined />}>
               My Profile
             </Menu.Item>
           </Menu>
