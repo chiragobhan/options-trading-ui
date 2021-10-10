@@ -4,6 +4,7 @@ import './HomePage.css'
 import Categories from './../Categories/Categories'
 import NewTrades from '../NewTrades/NewTrades'
 import TradesPlayed from '../TradesPlayed/TradesPlayed'
+import TradesTBD from '../TradesTBD/TradesTBD'
 import { Layout, Menu, Card } from 'antd';
 import {
   MenuUnfoldOutlined,
@@ -24,11 +25,16 @@ const tabList = [
     key: 'tradesPlayed',
     tab: 'Trades Played',
   },
+  {
+    key: 'tradesTBD',
+    tab: 'Trades TBD',
+  },
 ];
 
 const contentList = {
   newTrades: <NewTrades />,
   tradesPlayed: <TradesPlayed />,
+  tradesTBD: <TradesTBD />,
 };
 
 class HomePage extends React.Component {
