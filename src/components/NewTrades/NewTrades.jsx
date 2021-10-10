@@ -23,7 +23,7 @@ const changePrice = (value) => {
   return (
     <div>
         <Row gutter={[16, 24]}>
-            <Col sm={{ span: 24}} md={{ span: 8}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px' }}
                     hoverable="true"
@@ -45,7 +45,7 @@ const changePrice = (value) => {
                 </Card>
             </Col>
 
-            <Col sm={{ span: 24}} md={{ span: 8}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px' }}
                     hoverable="true"
@@ -67,7 +67,7 @@ const changePrice = (value) => {
                 </Card>
             </Col>
 
-            <Col sm={{ span: 24}} md={{ span: 8}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px' }}
                     hoverable="true"
@@ -89,7 +89,7 @@ const changePrice = (value) => {
                 </Card>
             </Col>
 
-            <Col sm={{ span: 24}} md={{ span: 8}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px' }}
                     hoverable="true"
@@ -111,7 +111,7 @@ const changePrice = (value) => {
                 </Card>
             </Col>
 
-            <Col sm={{ span: 24}} md={{ span: 8}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px' }}
                     hoverable="true"

@@ -8,7 +8,7 @@ const { Meta } = Card;
 return (
     <div>
         <Row gutter={[16, 24]}>
-            <Col sm={{ span: 24}} md={{ span: 6}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px', background: 'linear-gradient(0deg,#e9f7fe,#e9f7fe)' }}
                     hoverable="true"
@@ -23,7 +23,7 @@ return (
                 </Card>
             </Col>
             
-            <Col sm={{ span: 24}} md={{ span: 6}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px', background: 'linear-gradient(0deg,#fbf0f3,#fbf0f3)' }}
                     hoverable="true"
@@ -38,7 +38,7 @@ return (
                 </Card>
             </Col>
             
-            <Col sm={{ span: 24}} md={{ span: 6}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px', background: 'linear-gradient(0deg,#e9f7fe,#e9f7fe)' }}
                     hoverable="true"
@@ -53,7 +53,7 @@ return (
                 </Card>
             </Col>
             
-            <Col sm={{ span: 24}} md={{ span: 6}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px', background: 'linear-gradient(0deg,#fbf0f3,#fbf0f3)' }}
                     hoverable="true"
@@ -68,7 +68,7 @@ return (
                 </Card>
             </Col>
             
-            <Col sm={{ span: 24}} md={{ span: 6}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px', background: 'linear-gradient(0deg,#fbf0f3,#fbf0f3)' }}
                     hoverable="true"

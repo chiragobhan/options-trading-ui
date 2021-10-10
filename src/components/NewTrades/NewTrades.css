@@ -94,3 +94,25 @@
     left: 0px;
     right: 0;
 }
+
+@media only screen and (max-width: 575px) {
+    .ant-card-meta {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ant-card-meta-avatar {
+        justify-content: center;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .tradeActions {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .tradeFill {
+        display: none;
+    }
+}

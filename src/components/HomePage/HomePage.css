@@ -47,3 +47,13 @@ body {
 .site-layout .site-layout-background {
     background: #fbfeff;
 }
+
+.ant-card-hoverable {
+    cursor: default;
+}
+
+@media only screen and (max-width: 320px) {
+    .downloadAppBtn {
+        display: none;
+    }
+}

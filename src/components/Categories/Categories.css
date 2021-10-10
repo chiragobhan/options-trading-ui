@@ -12,3 +12,7 @@
     display: flex;
     overflow-x: scroll;
 }
+
+.ant-card-grid.ant-card-grid-hoverable {
+    padding: 10px;
+}

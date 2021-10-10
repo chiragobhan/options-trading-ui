@@ -8,7 +8,7 @@ const { Meta } = Card;
 return (
     <div>
         <Row gutter={[16, 24]}>
-            <Col sm={{ span: 24}} md={{ span: 6}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px' }}
                     hoverable="true"
@@ -23,7 +23,7 @@ return (
                 </Card>
             </Col>
             
-            <Col sm={{ span: 24}} md={{ span: 6}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px' }}
                     hoverable="true"
@@ -38,7 +38,7 @@ return (
                 </Card>
             </Col>
             
-            <Col sm={{ span: 24}} md={{ span: 6}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px' }}
                     hoverable="true"
@@ -53,7 +53,7 @@ return (
                 </Card>
             </Col>
             
-            <Col sm={{ span: 24}} md={{ span: 6}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px' }}
                     hoverable="true"
@@ -68,7 +68,7 @@ return (
                 </Card>
             </Col>
             
-            <Col sm={{ span: 24}} md={{ span: 6}}>
+            <Col sm={{ span: 24}} md={{ span: 12}} lg={{ span: 8}}>
                 <Card
                     style={{ borderRadius: '20px' }}
                     hoverable="true"

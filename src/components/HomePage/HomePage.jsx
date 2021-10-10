@@ -5,7 +5,7 @@ import Categories from './../Categories/Categories'
 import NewTrades from '../NewTrades/NewTrades'
 import TradesPlayed from '../TradesPlayed/TradesPlayed'
 import TradesTBD from '../TradesTBD/TradesTBD'
-import { Layout, Menu, Card } from 'antd';
+import { Layout, Menu, Card, Button } from 'antd';
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
@@ -13,6 +13,7 @@ import {
   FireOutlined,
   RiseOutlined,
   WalletOutlined,
+  DownloadOutlined,
 } from '@ant-design/icons';
 
 const { Header, Sider } = Layout;
@@ -64,8 +65,8 @@ class HomePage extends React.Component {
             {this.state.collapsed ? '' : <span className="logo">Probo</span> }
           </div>
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['2']}>
-          <Menu.Item style={{fontSize: '18px'}} disabled key="1" icon={<WalletOutlined style={{fontSize: '18px'}} />}>
-              00.00
+          <Menu.Item style={{fontSize: '18px'}} disabled key="1" icon={<WalletOutlined style={{fontSize: '18px', color: 'white'}} />}>
+              <span style={{color: 'white' }}>00.00</span>
             </Menu.Item>
             <Menu.Item key="2" icon={<RiseOutlined />}>
               Trades
@@ -85,7 +86,9 @@ class HomePage extends React.Component {
               className: 'trigger',
               onClick: this.toggle,
             })}
-            <span className="sub-title">Predict the future with Probo</span>
+            <Button onClick={() =>  window.open("https://probo.in/", "_blank")} className="downloadAppBtn" type="primary" shape="round" icon={<DownloadOutlined />} size="large">
+              Download App
+            </Button>
           </Header>
 
           <Categories />
