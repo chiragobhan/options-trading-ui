@@ -134,7 +134,8 @@ const changePrice = (value) => {
             </Col>
         </Row>
 
-        <Drawer
+        <Drawer 
+          className="tradeDrawer"
           title="This is a test title to see how a long question will look? Do you think it looks good?"
           placement="bottom"
           width={500}

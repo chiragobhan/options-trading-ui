@@ -5,7 +5,7 @@ import Categories from './../Categories/Categories'
 import NewTrades from '../NewTrades/NewTrades'
 import TradesPlayed from '../TradesPlayed/TradesPlayed'
 import TradesTBD from '../TradesTBD/TradesTBD'
-import { Layout, Menu, Card, Button } from 'antd';
+import { Layout, Menu, Card, Button, Drawer } from 'antd';
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
@@ -43,6 +43,7 @@ class HomePage extends React.Component {
   state = {
     collapsed: true,
     key: 'newTrades',
+    visible: false,
   };
 
   toggle = () => {
@@ -53,6 +54,18 @@ class HomePage extends React.Component {
 
   onTabChange = (key, type) => {
     this.setState({ [type]: key });
+  };
+
+  showDrawer = () => {
+    this.setState({
+      visible: true,
+    });
+  };
+
+  onClose = () => {
+    this.setState({
+      visible: false,
+    });
   };
 
   render() {
@@ -96,7 +109,7 @@ class HomePage extends React.Component {
           <Card
             className="tradeList"
             style={{ width: '100%' }}
-            extra={<a href="#">How to Trade?</a>}
+            extra={<a onClick={this.showDrawer} href="#">How to Trade?</a>}
             tabList={tabList}
             activeTabKey={this.state.key}
             onTabChange={key => {
@@ -107,6 +120,19 @@ class HomePage extends React.Component {
           </Card>
 
         </Layout>
+
+        <Drawer
+          className="howToTrade"
+          title="How To Trade?"
+          placement="bottom"
+          closable={true}
+          onClose={this.onClose}
+          visible={this.state.visible}
+          getContainer={true}
+          style={{ position: 'absolute' }}
+        >
+          <p>Some contents...</p>
+        </Drawer>
 
       </Layout>
     );

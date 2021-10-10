@@ -47,7 +47,7 @@
     height: 60px;
 }
 
-.ant-drawer-content-wrapper {
+.tradeDrawer .ant-drawer-content-wrapper {
     height: 550px !important;
 }
 
