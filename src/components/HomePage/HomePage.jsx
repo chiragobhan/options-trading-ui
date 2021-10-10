@@ -128,8 +128,6 @@ class HomePage extends React.Component {
           closable={true}
           onClose={this.onClose}
           visible={this.state.visible}
-          getContainer={true}
-          style={{ position: 'absolute' }}
         >
           <p>Some contents...</p>
         </Drawer>
