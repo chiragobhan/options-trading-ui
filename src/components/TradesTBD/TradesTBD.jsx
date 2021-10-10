@@ -1,4 +1,4 @@
-import { Card, Avatar, Button, Row, Col, Drawer, Tag, Slider, InputNumber, Statistic } from 'antd';
+import { Card, Avatar, Row, Col } from 'antd';
 import './../NewTrades/NewTrades.css';
 import './TradesTBD.css';
 

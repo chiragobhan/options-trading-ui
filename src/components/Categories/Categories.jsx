@@ -10,17 +10,17 @@ const gridStyle = {
 function Categories() {
   return (
     <Card title="Select a category to filter the trades" className="categoryList">
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" /></Card.Grid>
+        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
+        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
+        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
+        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
+        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
+        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
+        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
+        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
+        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
+        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
+        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
     </Card>
   );
 }

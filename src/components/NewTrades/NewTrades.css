@@ -31,7 +31,6 @@
     background: linear-gradient(0deg,#e9f7fe,#e9f7fe);
     display: flex;
     align-items: center;
-    width: 40%;
     border-radius: 20px;
     padding-left: 10px;
     margin-right: 10px;
@@ -39,7 +38,6 @@
 
 .tradeDangerFill {
     background: linear-gradient(0deg,#fbf0f3,#fbf0f3);
-    width: 100%;
 }
 
 .ant-avatar {
@@ -49,6 +47,14 @@
 
 .tradeDrawer .ant-drawer-content-wrapper {
     height: 550px !important;
+}
+
+.tradeDrawer.yesDrawerBackground .ant-drawer-body {
+    background: linear-gradient(0deg,#e9f7fe,#e9f7fe);
+}
+
+.tradeDrawer.noDrawerBackground .ant-drawer-body {
+    background: linear-gradient(0deg,#fbf0f3,#fbf0f3);
 }
 
 .ant-drawer-content {
@@ -61,6 +67,7 @@
 }
 
 .tradeInput {
+    background: white;
     width: 90%;
     margin: 15px auto 10px;
     padding: 30px 0;

@@ -6,8 +6,12 @@ function NewTrades() {
 const { Meta } = Card;
 const [visible, setVisible] = useState(false);
 const [quantityInput, setQuantityInput] = useState(1);
-const [priceInput, setPriceInput] = useState(0.5);
-const showDrawer = () => {
+const [tradeUserOpinion, setTradeUserOpinion] = useState(1);
+const [tradeYesValue, setTradeYesValue] = useState(4);
+const [tradeNoValue, setTradeNoValue] = useState(6);
+const [priceInput, setPriceInput] = useState(tradeUserOpinion === 1 ? tradeYesValue : tradeNoValue);
+const showDrawer = (value) => {
+    value === 0 ? setTradeUserOpinion(0) : setTradeUserOpinion(1);
     setVisible(true);
 };
 const onClose = () => {
@@ -34,12 +38,12 @@ const changePrice = (value) => {
                     />
                     <div className="tradeActions">
                         <div className="tradeAction">
-                            <div className="tradeFill tradePrimaryFill">₹ 4</div>
-                            <Button onClick={showDrawer} className="primary-btn" default shape="round" size="large">Yes</Button>
+                            <div style={{width: (tradeYesValue * 10) + "%"}} className="tradeFill tradePrimaryFill">₹ {tradeYesValue}</div>
+                            <Button onClick={() => showDrawer(1)} className="primary-btn" default shape="round" size="large">Yes</Button>
                         </div>
                         <div className="tradeAction">
-                            <div className="tradeFill tradeDangerFill">₹ 6</div>
-                            <Button onClick={showDrawer} danger shape="round" size="large">No</Button>
+                            <div style={{width: (tradeNoValue * 10) + "%"}} className="tradeFill tradeDangerFill">₹ {tradeNoValue}</div>
+                            <Button onClick={() => showDrawer(0)} danger shape="round" size="large">No</Button>
                         </div>
                     </div>
                 </Card>
@@ -135,7 +139,7 @@ const changePrice = (value) => {
         </Row>
 
         <Drawer 
-          className="tradeDrawer"
+          className={tradeUserOpinion === 1 ? "yesDrawerBackground tradeDrawer" : "noDrawerBackground tradeDrawer"}
           title="This is a test title to see how a long question will look? Do you think it looks good?"
           placement="bottom"
           width={500}
@@ -143,7 +147,7 @@ const changePrice = (value) => {
           visible={visible}
         >
             <div className="tradeSubmissionDrawer">
-                <span>You are trading for </span><Tag color="#1da1f2" style={{fontSize: '16px', borderRadius: '20px'}}>Yes</Tag>
+                <span>You are trading for </span><Tag color={tradeUserOpinion === 1 ? "#1da1f2" : "#f93d4b"} style={{fontSize: '16px', borderRadius: '20px'}}>{tradeUserOpinion === 1 ? "Yes" : "No"}</Tag>
                 <div className="tradeInput">
                 <Row style={{justifyContent: 'center', marginBottom: '10px'}}>
                     <Col span={14}>
@@ -174,6 +178,7 @@ const changePrice = (value) => {
                             onChange={changePrice}
                             value={typeof priceInput === 'number' ? priceInput : 0}
                             step={0.5}
+                            defaultValue={tradeUserOpinion === 1 ? tradeYesValue : tradeNoValue}
                         />
                     </Col>
                     <Col span={6}>
@@ -184,24 +189,25 @@ const changePrice = (value) => {
                         value={priceInput}
                         onChange={changePrice}
                         step={0.5}
+                        defaultValue={tradeUserOpinion === 1 ? tradeYesValue : tradeNoValue}
                     />
                     </Col>
                 </Row>
                 </div>
                 <Row style={{width: '70%', padding: '15px', marginTop: '25px'}} className="tradeInput">
                     <Col span={12}>
-                        <Statistic title="Total Amount" value={1000} precision={1} />
+                        <Statistic title="Total Amount" value={priceInput * quantityInput} precision={1} />
                     </Col>
                     <Col span={12}>
-                        <Statistic title="Potential Win" value={1000} precision={1} />
+                        <Statistic title="Potential Win" value={(10 - priceInput) * quantityInput} precision={1} />
                     </Col>
                 </Row>
-                <Button style={{marginTop: '10px'}} type="primary" shape="round" size="large">
-                    Trade for Yes
+                <Button style={{marginTop: '10px'}} type={tradeUserOpinion === 1 ? "primary" : "danger"} shape="round" size="large">
+                    Trade for {tradeUserOpinion === 1 ? "Yes" : "No"}
                 </Button>
                 <div className="tradeDrawerFooter">
-                    <span style={{padding: '5px'}}>Available Balance: ₹0.00</span>
-                    <span style={{padding: '5px'}}>Commission: ₹0.00</span>
+                    <span style={{padding: '5px'}}>Available Balance: ₹100.00</span>
+                    <span style={{padding: '5px'}}>Commission: ₹{((10 - priceInput) * quantityInput) / 10}</span>
                 </div>
             </div>
         </Drawer>

@@ -79,7 +79,7 @@ class HomePage extends React.Component {
           </div>
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['2']}>
           <Menu.Item style={{fontSize: '18px'}} disabled key="1" icon={<WalletOutlined style={{fontSize: '18px', color: 'white'}} />}>
-              <span style={{color: 'white' }}>00.00</span>
+              <span style={{color: 'white' }}>100.00</span>
             </Menu.Item>
             <Menu.Item key="2" icon={<RiseOutlined />}>
               Trades
