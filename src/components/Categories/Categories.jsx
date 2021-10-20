@@ -1,27 +1,100 @@
-import { Card } from 'antd';
+import { Card, Avatar } from 'antd';
 import './Categories.css';
 
-const gridStyle = {
-  borderRadius: '100%',
-  margin: '15px',
-  cursor: 'pointer'
-};
-
 function Categories() {
+  const { Meta } = Card;
   return (
-    <Card title="Select a category to filter the trades" className="categoryList">
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
-        <Card.Grid style={gridStyle}><img style={{width: '65px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="categoryName" /></Card.Grid>
-    </Card>
+    <div>
+      <Card
+            className="categoryList"
+          >
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 1"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 2"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 3"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 4"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 5"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 6"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 7"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 8"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 9"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 10"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 11"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 12"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 13"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 14"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 15"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 16"
+          />
+          <Meta
+            className="category"
+            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" className="categoryIcon" />}
+            title="Type 17"
+          />
+          </Card>
+    </div>
   );
 }
 

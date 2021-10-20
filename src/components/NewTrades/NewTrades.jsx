@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Card, Avatar, Button, Row, Col, Drawer, Tag, Slider, InputNumber, Statistic } from 'antd';
 import './NewTrades.css';
 

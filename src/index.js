@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HomePage from './components/HomePage/HomePage';
+import AppLayout from './components/Layout/AppLayout';
 
 ReactDOM.render(
-  <HomePage />,
+  <AppLayout />,
   document.getElementById('probo-betmount')
 );
