@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/options-trading-ui/static/css/main.80e57005.chunk.css",
-    "main.js": "/options-trading-ui/static/js/main.c377bd74.chunk.js",
-    "main.js.map": "/options-trading-ui/static/js/main.c377bd74.chunk.js.map",
-    "runtime-main.js": "/options-trading-ui/static/js/runtime-main.91a7d575.js",
-    "runtime-main.js.map": "/options-trading-ui/static/js/runtime-main.91a7d575.js.map",
-    "static/css/2.786ae0dd.chunk.css": "/options-trading-ui/static/css/2.786ae0dd.chunk.css",
-    "static/js/2.90fab26b.chunk.js": "/options-trading-ui/static/js/2.90fab26b.chunk.js",
-    "static/js/2.90fab26b.chunk.js.map": "/options-trading-ui/static/js/2.90fab26b.chunk.js.map",
-    "index.html": "/options-trading-ui/index.html",
-    "static/css/2.786ae0dd.chunk.css.map": "/options-trading-ui/static/css/2.786ae0dd.chunk.css.map",
-    "static/css/main.80e57005.chunk.css.map": "/options-trading-ui/static/css/main.80e57005.chunk.css.map",
-    "static/js/2.90fab26b.chunk.js.LICENSE.txt": "/options-trading-ui/static/js/2.90fab26b.chunk.js.LICENSE.txt"
+    "main.css": "/options-trading-ui/trades/static/css/main.80e57005.chunk.css",
+    "main.js": "/options-trading-ui/trades/static/js/main.fcc00c7a.chunk.js",
+    "main.js.map": "/options-trading-ui/trades/static/js/main.fcc00c7a.chunk.js.map",
+    "runtime-main.js": "/options-trading-ui/trades/static/js/runtime-main.391f1185.js",
+    "runtime-main.js.map": "/options-trading-ui/trades/static/js/runtime-main.391f1185.js.map",
+    "static/css/2.786ae0dd.chunk.css": "/options-trading-ui/trades/static/css/2.786ae0dd.chunk.css",
+    "static/js/2.90fab26b.chunk.js": "/options-trading-ui/trades/static/js/2.90fab26b.chunk.js",
+    "static/js/2.90fab26b.chunk.js.map": "/options-trading-ui/trades/static/js/2.90fab26b.chunk.js.map",
+    "index.html": "/options-trading-ui/trades/index.html",
+    "static/css/2.786ae0dd.chunk.css.map": "/options-trading-ui/trades/static/css/2.786ae0dd.chunk.css.map",
+    "static/css/main.80e57005.chunk.css.map": "/options-trading-ui/trades/static/css/main.80e57005.chunk.css.map",
+    "static/js/2.90fab26b.chunk.js.LICENSE.txt": "/options-trading-ui/trades/static/js/2.90fab26b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.91a7d575.js",
+    "static/js/runtime-main.391f1185.js",
     "static/css/2.786ae0dd.chunk.css",
     "static/js/2.90fab26b.chunk.js",
     "static/css/main.80e57005.chunk.css",
-    "static/js/main.c377bd74.chunk.js"
+    "static/js/main.fcc00c7a.chunk.js"
   ]
 }
