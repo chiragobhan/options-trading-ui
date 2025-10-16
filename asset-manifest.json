@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/options-trading-ui/static/css/main.80e57005.chunk.css",
-    "main.js": "/options-trading-ui/static/js/main.fcc00c7a.chunk.js",
-    "main.js.map": "/options-trading-ui/static/js/main.fcc00c7a.chunk.js.map",
+    "main.js": "/options-trading-ui/static/js/main.c377bd74.chunk.js",
+    "main.js.map": "/options-trading-ui/static/js/main.c377bd74.chunk.js.map",
     "runtime-main.js": "/options-trading-ui/static/js/runtime-main.91a7d575.js",
     "runtime-main.js.map": "/options-trading-ui/static/js/runtime-main.91a7d575.js.map",
     "static/css/2.786ae0dd.chunk.css": "/options-trading-ui/static/css/2.786ae0dd.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.786ae0dd.chunk.css",
     "static/js/2.90fab26b.chunk.js",
     "static/css/main.80e57005.chunk.css",
-    "static/js/main.fcc00c7a.chunk.js"
+    "static/js/main.c377bd74.chunk.js"
   ]
 }
