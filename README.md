@@ -1,6 +1,6 @@
 # 🧮 Options Trading UI (Frontend Only)
 
-A **frontend-only prototype** of an options trading interface, inspired by apps like **Probo** and **Betmount**. This React-based UI lets users explore categories, simulate trades, and view their wallet — but does **not** connect to any backend or submit real trades.   
+A **frontend-only prototype** of an options trading interface, inspired by apps like **Betmount** and **Probo**. This React-based UI lets users explore categories, simulate trades, and view their wallet — but does **not** connect to any backend or submit real trades.   
 
 Live Demo - https://chiragobhan.github.io/options-trading-ui/
 
