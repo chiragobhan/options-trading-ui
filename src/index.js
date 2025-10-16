@@ -4,5 +4,5 @@ import AppLayout from './components/Layout/AppLayout';
 
 ReactDOM.render(
   <AppLayout />,
-  document.getElementById('probo-betmount')
+  document.getElementById('betmount')
 );

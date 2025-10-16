@@ -63,7 +63,7 @@ return (
                     title="This is a test title to see how a long question will look? Do you think it looks good?"
                     />
                     <div>
-                        <p style={{color: "#1da1f2"}} className="tradeResults">You traded <b>69</b> for <b>YES</b> </p>
+                        <p style={{color: "#1da1f2"}} className="tradeResults">You traded <b>₹69</b> for <b>YES</b> </p>
                     </div>
                 </Card>
             </Col>

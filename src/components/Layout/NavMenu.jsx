@@ -30,7 +30,7 @@ class NavMenu extends React.Component {
           <Router>
             <Menu theme="dark" mode="inline" defaultSelectedKeys={['2']}>
               <div className="logo-wrapper">
-                <img src={appSetting.pbIcon} alt={appSetting.pbIconAlt} />
+                <img style={{width:'60px'}} src={appSetting.pbIcon} alt={appSetting.pbIconAlt} />
                 {this.state.collapsed ? '' : <span className="logo">{appSetting.pbAppName}</span> }
               </div>
               <Menu.Item style={{fontSize: '18px'}} disabled key="1" icon={<WalletOutlined style={{fontSize: '18px', color: 'white'}} />}>

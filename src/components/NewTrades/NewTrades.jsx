@@ -33,7 +33,7 @@ const changePrice = (value) => {
                     hoverable="true"
                 >
                     <Meta
-                    avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                    avatar={<Avatar src="https://cdn4.iconfinder.com/data/icons/random-112/750/Random-20-512.png" />}
                     title="This is a test title to see how a long question will look? Do you think it looks good?"
                     />
                     <div className="tradeActions">
@@ -55,7 +55,7 @@ const changePrice = (value) => {
                     hoverable="true"
                 >
                     <Meta
-                    avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                    avatar={<Avatar src="https://cdn4.iconfinder.com/data/icons/random-112/750/Random-20-512.png" />}
                     title="This is a test title to see how a long question will look? Do you think it looks good?"
                     />
                     <div className="tradeActions">
@@ -77,7 +77,7 @@ const changePrice = (value) => {
                     hoverable="true"
                 >
                     <Meta
-                    avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                    avatar={<Avatar src="https://cdn4.iconfinder.com/data/icons/random-112/750/Random-20-512.png" />}
                     title="This is a test title to see how a long question will look? Do you think it looks good?"
                     />
                     <div className="tradeActions">
@@ -99,7 +99,7 @@ const changePrice = (value) => {
                     hoverable="true"
                 >
                     <Meta
-                    avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                    avatar={<Avatar src="https://cdn4.iconfinder.com/data/icons/random-112/750/Random-20-512.png" />}
                     title="This is a test title to see how a long question will look? Do you think it looks good?"
                     />
                     <div className="tradeActions">
@@ -121,7 +121,7 @@ const changePrice = (value) => {
                     hoverable="true"
                 >
                     <Meta
-                    avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+                    avatar={<Avatar src="https://cdn4.iconfinder.com/data/icons/random-112/750/Random-20-512.png" />}
                     title="This is a test title to see how a long question will look? Do you think it looks good?"
                     />
                     <div className="tradeActions">
